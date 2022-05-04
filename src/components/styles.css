@@ -1,0 +1,96 @@
+.container {
+  position: relative;
+}
+
+.container .img {
+  display: block;
+}
+.paraTitle {
+  color: rgb(113, 247, 247);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.spanPara {
+  color: #ffd32a;
+  font-size: 48px;
+}
+
+.paraTitle .btn {
+  padding: 12px;
+  transition: 0.2s all;
+}
+
+.paraTitle .btnA {
+  margin-right: 12px;
+  border: 2px solid white;
+  color: aliceblue;
+  background-color: rgb(245, 194, 43);
+}
+.paraTitle .btnB {
+  margin-right: 12px;
+  border: 2px solid white;
+  color: aliceblue;
+  background-color: rgb(85, 15, 15);
+}
+
+.btnA:hover {
+  background-color: rgb(223, 18, 18);
+  box-shadow: 0px 2px 20px 5px rgb(237, 231, 231);
+  color: rgb(14, 13, 13);
+  font-weight: 500;
+  border: 2px solid rgb(232, 225, 225);
+}
+.btnB:hover {
+  background-color: rgb(245, 22, 22);
+  box-shadow: 0px 2px 20px 5px rgb(237, 231, 231);
+  color: rgb(56, 42, 42);
+  font-weight: 500;
+  border: 2px solid rgb(244, 235, 235);
+}
+
+.cardImg {
+  border: 2ps solid red;
+  padding: 13px;
+  border-radius: 5px;
+  background-color: rgb(105, 119, 119);
+}
+
+.cardImg .imge {
+  border-radius: 5px;
+  animation: scaleDown 0.4s linear;
+  animation-fill-mode: forwards;
+}
+/* .card-container{
+    box-shadow: 0px 2px 20px 5px rgb(237, 231, 231);
+} */
+
+  .cardImg .imge:hover{
+     z-index: 100;
+     animation: scale 0.4s linear;
+     animation-fill-mode: forwards;
+  }
+@keyframes scaleDown{
+    0%{
+     transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+@keyframes scale{
+    0%{
+     transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+        box-shadow: 0px 2px 20px 5px rgb(237, 231, 231);
+    }
+}
+
+.footers{
+    background-color: #64635b;
+}
